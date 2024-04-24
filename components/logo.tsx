@@ -1,7 +1,12 @@
 import React from "react";
 import { Image, Text, View, StyleSheet } from "react-native";
 
-const Logo = ({text, color}) => {
+type LogoProps = {
+    text: string,
+    color: string,
+}
+
+const Logo = ({text, color}: LogoProps ) => {
     const styles = StyleSheet.create({
         header: {
             marginBottom: 20,
@@ -30,7 +35,7 @@ const Logo = ({text, color}) => {
 
     return (
         <View style={styles.header}>
-            <Image source={require('./img/Logo.png')} style={styles.logo} />
+            <Image source={require('../assets/Logo.png')} style={styles.logo} />
             <Text style={styles.headerText}>{text}</Text>
         </View>
     );
