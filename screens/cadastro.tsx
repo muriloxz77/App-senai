@@ -6,6 +6,7 @@ import React,{ useState } from 'react';
 import Logo from '../components/logo';
 import InputField from '../components/input';
 import Botao from '../components/botao';
+import 
 
 function cadastro () {
   return (
